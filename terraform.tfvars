@@ -1,0 +1,6 @@
+aws_region         = "us-east-1"
+project_name       = "terraform-vpc-ec2"
+vpc_cidr           = "10.10.0.0/16"
+public_subnet_cidr = "10.10.1.0/24"
+az                 = "us-east-1a"
+my_ip_cidr         = "YOUR_PUBLIC_IP/32"
