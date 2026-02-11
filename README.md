@@ -48,4 +48,46 @@ Once deployed, the EC2 instance serves a live web page confirming successful inf
 ---
 
 ## 📂 Project Structure
+terraform-aws-vpc-ec2/
+│── main.tf
+│── provider.tf
+│── variables.tf
+│── outputs.tf
+│── terraform.tfvars
+│── versions.tf
+│── .gitignore
+│── README.md
+
+
+---
+
+How to Run
+
+Initialize Terraform:
+terraform init
+
+Validate and generate the execution plan:
+terraform validate
+terraform plan
+
+Apply the infrastructure:
+terraform apply -auto-approve
+
+
+Outputs
+
+After a successful deployment, Terraform will output the following values:
+VPC ID
+Subnet ID
+EC2 Public IP
+Public URL to access the NGINX web server
+
+Example:
+http://<EC2_PUBLIC_IP>
+
+
+Cleanup
+
+To destroy all created AWS resources:
+terraform destroy -auto-approve
 
